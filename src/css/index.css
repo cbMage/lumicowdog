@@ -227,6 +227,10 @@ footer a:hover {
         max-width: 100%;
     }
 
+    .stream iframe {
+        height: 40vh;
+    }
+
     .stream img {
         max-width: 80%;
     }
