@@ -127,6 +127,7 @@ img {
     list-style: none;
     padding: 0;
     justify-content: space-evenly;
+    gap: .4rem;
 }
 
 .icon-container li {
@@ -219,6 +220,12 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+    .icon-container {
+        width: 60%;
+        margin: 0 auto;
+        gap: .6rem;
+    }
+
     .icon-container li {
         margin-top: .4rem;
     }
