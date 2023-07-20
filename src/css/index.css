@@ -33,6 +33,10 @@ img {
     transition: opacity .2s ease-in;
 }
 
+article {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .hero {
     display: flex;
     justify-content: center;
@@ -66,7 +70,6 @@ img {
 .bio {
     display: flex;
     justify-content: center;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .bio > * + * {
@@ -87,7 +90,7 @@ img {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .bio-panel {
@@ -184,7 +187,6 @@ figcaption {
     position: relative;
     margin-left: 1.5rem;
     bottom: 2rem;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.3rem;
     opacity: 0;
     height: 0;
@@ -213,13 +215,76 @@ footer a:hover {
     color: darkred;
 }
 
+.email {
+    margin: 2rem auto;
+    width: 79%;
+    font-size: 1.3rem;
+}
+
+.email a {
+    text-decoration: underline;
+}
+
+.email a:hover {
+    color: #f7a2e4;
+}
+
+.email-panel {
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gifbox {
+    width: calc(5% + 1vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+}
+
+.email img {
+    background-color: #ffffff00;
+    max-width: 100%;
+    border-radius: 0;
+    margin: auto;
+    align-self: center;
+}
+
+.email p {
+    line-height: 2.6rem;
+    text-align: center;
+}
+
 .twitter {
     width: 79%;
     margin: 2rem auto 0 auto;
+    display: none;
 }
 
 .twitter div {
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .email {
+        width: 90%;
+    }
+
+    .email-panel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email p {
+        margin: auto 0 .7rem 2rem;
+    }
+
+    .gifbox {
+        width: calc(1rem + 8vw);
+    }
 }
 
 @media only screen and (max-width: 930px) {
