@@ -33,6 +33,18 @@ img {
     transition: opacity .2s ease-in;
 }
 
+.vgen {
+    position: fixed;
+    width: 15vw;
+    top: 70vh;
+    left: 10vw;
+    z-index: 5;
+}
+
+.vgen img {
+    background-color: transparent;
+}
+
 article {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -89,18 +101,18 @@ article {
     max-width: 39%;
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     justify-content: space-between;
 }
 
 .bio-panel {
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 1em;
+    padding: 1vw;
 }
 
 .bio-panel p {
-    margin-left: .7rem; 
+    margin-left: .7rem;
 }
 
 .bio-panel li + li {
@@ -218,7 +230,7 @@ footer a:hover {
 .email {
     margin: 2rem auto;
     width: 79%;
-    font-size: 1.3rem;
+    font-size: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,6 +282,12 @@ footer a:hover {
 
 .twitter div {
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 1237px) {
+    .about {
+        font-size: 1.5vw;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -333,4 +351,7 @@ footer a:hover {
         margin: 5%;
     }
 
+    .email {
+        font-size: 1em;
+    }
 }
