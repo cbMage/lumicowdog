@@ -43,6 +43,7 @@ img {
 
 .vgen img {
     background-color: transparent;
+    border-radius: 0;
 }
 
 article {
@@ -290,9 +291,15 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1240px) {
+
+    .about {
+        font-size: 1.2rem;
+    }
+    
     .email {
         width: 90%;
+        font-size: 1.2rem;
     }
 
     .email-panel {
@@ -312,6 +319,14 @@ footer a:hover {
 @media only screen and (max-width: 930px) {
     .icon-container li {
         margin-top: .4rem;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .vgen {
+        width: 9em;
+        top: 75vh;
     }
 }
 
