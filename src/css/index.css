@@ -35,8 +35,8 @@ img {
 
 .vgen {
     position: fixed;
-    width: 15vw;
-    top: 70vh;
+    width: 20vw;
+    top: 63vh;
     left: 10vw;
     z-index: 5;
 }
@@ -314,6 +314,12 @@ footer a:hover {
     .gifbox {
         width: calc(1rem + 8vw);
     }
+
+    .vgen {
+        width: 15em;
+        top: 75vh;
+        left: 3vh;
+    }
 }
 
 @media only screen and (max-width: 930px) {
@@ -321,13 +327,6 @@ footer a:hover {
         margin-top: .4rem;
     }
 
-}
-
-@media only screen and (max-width: 950px) {
-    .vgen {
-        width: 9em;
-        top: 75vh;
-    }
 }
 
 @media only screen and (max-width: 600px) {
